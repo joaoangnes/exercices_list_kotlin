@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFE6E9"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Atividade 01 - João Arthur"
+        android:textSize="28sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" /> <!-- Espaço vertical entre o título e os botões -->
+
+
+    <TextView
+        android:id="@+id/txtCalculadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Calculadora"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtSelecione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Selecione o que deseja calcular:"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnCalcSalario"
+        style="@style/AppButtonStyle"
+        android:text="Sálario" />
+
+    <Button
+        android:id="@+id/btnCalcVolCx"
+        style="@style/AppButtonStyle"
+        android:text="Volume Caixa" />
+
+    <Button
+        android:id="@+id/btnCalcIdade"
+        style="@style/AppButtonStyle"
+        android:text="Idade" />
+
+    <Button
+        android:id="@+id/btnCalcConsumo"
+        style="@style/AppButtonStyle"
+        android:text="Consumo do Veiculo" />
+
+    <Button
+        android:id="@+id/btnCalcNota"
+        style="@style/AppButtonStyle"
+        android:text="Média final do Aluno" />
+
+    <Button
+        android:id="@+id/btnCalcTemp"
+        style="@style/AppButtonStyle"
+        android:text="Temperatura" />
+
+    <Button
+        android:id="@+id/btnCalcVolOleo"
+        style="@style/AppButtonStyle"
+        android:text="Volume lata de óleo" />
+</LinearLayout>
