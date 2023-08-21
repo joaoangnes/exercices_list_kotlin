@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFE6E9"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Calculadora de Consumo por Litro"
+        android:textSize="26sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <EditText
+        android:id="@+id/edtKmPercorrido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Quantidade de Kilometros Percorridos"
+        android:layout_margin="10dp"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtQntLitrosAbastecido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Quantidade de litros abastecidos"
+        android:layout_margin="10dp"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnCalcConsumo"
+        style="@style/AppButtonStyle"
+        android:layout_height="69dp"
+        android:textSize="15sp"
+        android:text="Calcular Consumo" />
+
+    <LinearLayout
+        android:id="@+id/layoutConsumoVeiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/txtConsumoVeiculo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="5dp"
+            android:text="Consumo por litro:"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtConsumoVeiculoRes"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+</LinearLayout>

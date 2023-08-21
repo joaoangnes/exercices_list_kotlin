@@ -1,5 +1,6 @@
 package com.example.listakotlin01
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -43,39 +44,58 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // Função que irá realizar as ações dos botões
     private fun handleButtonClick(buttonId: Int) {
-        var mensagem = ""
-
         when (buttonId) {
             binding.btnCalcSalario.id -> {
-                // Ação para o Botão 1
-                mensagem = "CACA EU TE AMOOOO"
+                // Ação para o Botão de Salário
+                // Criar intent para acessar outra activity
+                var intent = Intent(this, SalarioActivity::class.java)
+                // Iniciar activity de acordo com dados da intent
+                startActivity(intent)
             }
             binding.btnCalcVolCx.id -> {
-                // Ação para o Botão 2
-                mensagem = "MAIS QUE TUDO NO MUNDO"
+                // Ação para o Botão de Volume da Caixa
+                // Criar intent para acessar outra activity
+                var intent = Intent(this, VolumeCaixaActivity::class.java)
+                // Iniciar activity de acordo com dados da intent
+                startActivity(intent)
             }
             binding.btnCalcIdade.id -> {
-                // Ação para o Botão 3
-                mensagem = "VOCE É TUDO PARA MIM"
+                // Ação para o Botão de Idade
+                // Criar intent para acessar outra activity
+                var intent = Intent(this, IdadeActivity::class.java)
+                // Iniciar activity de acordo com dados da intent
+                startActivity(intent)
             }
             binding.btnCalcConsumo.id -> {
-                // Ação para o Botão 4
-                mensagem = "MESMO ME ODIANDO"
+                // Ação para o Botão de Consumo do veiculo
+                // Criar intent para acessar outra activity
+                var intent = Intent(this, ConsumoActivity::class.java)
+                // Iniciar activity de acordo com dados da intent
+                startActivity(intent)
             }
             binding.btnCalcNota.id -> {
-                // Ação para o Botão 5
-                mensagem = "EU SOU COMPLETAMENTE APAIXONADO POR VOCE"
+                // Ação para o Botão Média final do aluno
+                // Criar intent para acessar outra activity
+                var intent = Intent(this, MediaAlunoActivity::class.java)
+                // Iniciar activity de acordo com dados da intent
+                startActivity(intent)
             }
             binding.btnCalcTemp.id -> {
-                // Ação para o Botão 6
-                mensagem = "NÃO TENHO VERGONHA E VOU TE LEVAR PARA O MUNDO INTEIRO COMIGO PARA O MUNDO INTEIRO"
+                // Ação para o Botão de temperatura
+                // Criar intent para acessar outra activity
+                var intent = Intent(this, TemperaturaActivity::class.java)
+                // Iniciar activity de acordo com dados da intent
+                startActivity(intent)
             }
             binding.btnCalcVolOleo.id -> {
-                // Ação para o Botão 7
-                mensagem = "PARA TODA ETERNIDADE, EU TE AMOOO"
+                // Ação para o Botão volume lata de oleo
+                // Criar intent para acessar outra activity
+                var intent = Intent(this, VolumeLataOleo::class.java)
+                // Iniciar activity de acordo com dados da intent
+                startActivity(intent)
             }
         }
-        Toast.makeText(this, mensagem, Toast.LENGTH_SHORT).show()
     }
 }
